@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Growing in Christ Family</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+    <!-- Header/Navigation Bar -->
+    <header class="sticky top-0 bg-white shadow-lg z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-teal-600 hover:text-teal-800 transition duration-300">
+                GICF
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-teal-600 transition duration-300 font-medium">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-teal-600 transition duration-300 font-medium">About Us</a>
+                <a href="gallery.html" class="text-gray-600 hover:text-teal-600 transition duration-300 font-medium">Gallery</a>
+                <a href="contact.html" class="text-gray-600 hover:text-teal-600 transition duration-300 font-medium">Contact Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-teal-600 transition duration-300">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="flex flex-col p-4 space-y-2">
+                <a href="index.html" class="py-2 px-4 text-gray-600 hover:bg-teal-50 hover:text-teal-600 transition duration-300 rounded-md">Home</a>
+                <a href="about.html" class="py-2 px-4 text-gray-600 hover:bg-teal-50 hover:text-teal-600 transition duration-300 rounded-md">About Us</a>
+                <a href="gallery.html" class="py-2 px-4 text-gray-600 hover:bg-teal-50 hover:text-teal-600 transition duration-300 rounded-md">Gallery</a>
+                <a href="contact.html" class="py-2 px-4 text-gray-600 hover:bg-teal-50 hover:text-teal-600 transition duration-300 rounded-md">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <section class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-teal-800 mb-4">Contact Us</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                We would love to hear from you. Fill out the form below and we will get back to you as soon as possible.
+            </p>
+        </section>
+
+        <section class="bg-white p-8 md:p-12 rounded-xl shadow-lg max-w-2xl mx-auto">
+            <!-- The form will submit to a backend endpoint -->
+            <form id="contact-form" action="/submit-form" method="POST" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                    <input type="text" id="name" name="name" required
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500 transition duration-300">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Your Email</label>
+                    <input type="email" id="email" name="email" required
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500 transition duration-300">
+                </div>
+                <div>
+                    <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                    <input type="text" id="subject" name="subject" required
+                           class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500 transition duration-300">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                    <textarea id="message" name="message" rows="5" required
+                              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-teal-500 focus:border-teal-500 transition duration-300"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-teal-600 text-white px-6 py-3 rounded-lg font-bold text-lg hover:bg-teal-700 transition duration-300 shadow-md">
+                    Send Message
+                </button>
+            </form>
+            <!-- Message box for feedback -->
+            <div id="form-message" class="mt-6 text-center text-sm font-medium hidden"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2023 Growing in Christ Family. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+</html>

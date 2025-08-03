@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Growing in Christ Family</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+    <!-- Header/Navigation Bar -->
+    <header class="sticky top-0 bg-white shadow-lg z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-teal-600 hover:text-teal-800 transition duration-300">
+                GICF
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-teal-600 transition duration-300 font-medium">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-teal-600 transition duration-300 font-medium">About Us</a>
+                <a href="gallery.html" class="text-gray-600 hover:text-teal-600 transition duration-300 font-medium">Gallery</a>
+                <a href="contact.html" class="text-gray-600 hover:text-teal-600 transition duration-300 font-medium">Contact Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-teal-600 transition duration-300">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="flex flex-col p-4 space-y-2">
+                <a href="index.html" class="py-2 px-4 text-gray-600 hover:bg-teal-50 hover:text-teal-600 transition duration-300 rounded-md">Home</a>
+                <a href="about.html" class="py-2 px-4 text-gray-600 hover:bg-teal-50 hover:text-teal-600 transition duration-300 rounded-md">About Us</a>
+                <a href="gallery.html" class="py-2 px-4 text-gray-600 hover:bg-teal-50 hover:text-teal-600 transition duration-300 rounded-md">Gallery</a>
+                <a href="contact.html" class="py-2 px-4 text-gray-600 hover:bg-teal-50 hover:text-teal-600 transition duration-300 rounded-md">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <section class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-teal-800 mb-4">About Our Family</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Growing in Christ Family is more than a name; it's a way of life.
+            </p>
+        </section>
+
+        <section class="bg-white p-8 rounded-xl shadow-lg mb-12">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/14b8a6/ffffff?text=Our+Story" alt="Our Story" class="w-full rounded-lg shadow-md">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-teal-700 mb-4">Our Journey</h2>
+                    <p class="text-gray-700 mb-4">
+                        Founded on a shared love for Christ, our family began with a simple idea: to create a space where individuals could feel loved, supported, and challenged to grow in their faith. What started as a small prayer group has blossomed into a vibrant community.
+                    </p>
+                    <p class="text-gray-700">
+                        We believe that growth is a continuous process, and we are committed to walking alongside each other through every season of life. Our journey is a testament to God's faithfulness and the power of a united body of believers.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-100 p-8 rounded-xl shadow-lg">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex flex-col items-center text-center">
+                    <i class="fas fa-bullseye text-4xl text-teal-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-teal-700 mb-2">Our Mission</h3>
+                    <p class="text-gray-700">
+                        To empower every member to live a life rooted in biblical truth, to serve their community with love, and to share the Gospel with boldness and compassion.
+                    </p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <i class="fas fa-eye text-4xl text-teal-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-teal-700 mb-2">Our Vision</h3>
+                    <p class="text-gray-700">
+                        To see a generation transformed by the power of Christ, impacting their homes, workplaces, and nations for His glory. We envision a world filled with hope, kindness, and unwavering faith.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2023 Growing in Christ Family. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript file for functionality like mobile menu -->
+    <script src="script.js"></script>
+</body>
+</html>

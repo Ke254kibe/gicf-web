@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Growing in Christ Family</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+    <!-- Header/Navigation Bar -->
+    <header class="sticky top-0 bg-white shadow-lg z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-teal-600 hover:text-teal-800 transition duration-300">
+                GICF
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-teal-600 transition duration-300 font-medium">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-teal-600 transition duration-300 font-medium">About Us</a>
+                <a href="gallery.html" class="text-gray-600 hover:text-teal-600 transition duration-300 font-medium">Gallery</a>
+                <a href="contact.html" class="text-gray-600 hover:text-teal-600 transition duration-300 font-medium">Contact Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-teal-600 transition duration-300">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="flex flex-col p-4 space-y-2">
+                <a href="index.html" class="py-2 px-4 text-gray-600 hover:bg-teal-50 hover:text-teal-600 transition duration-300 rounded-md">Home</a>
+                <a href="about.html" class="py-2 px-4 text-gray-600 hover:bg-teal-50 hover:text-teal-600 transition duration-300 rounded-md">About Us</a>
+                <a href="gallery.html" class="py-2 px-4 text-gray-600 hover:bg-teal-50 hover:text-teal-600 transition duration-300 rounded-md">Gallery</a>
+                <a href="contact.html" class="py-2 px-4 text-gray-600 hover:bg-teal-50 hover:text-teal-600 transition duration-300 rounded-md">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <section class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-teal-800 mb-4">Our Family Gallery</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                A collection of cherished moments from our fellowship, events, and community service.
+            </p>
+        </section>
+
+        <!-- Image Gallery Grid -->
+        <section>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="MMUSDA-430.jpg" alt="Fellowship Event" class="w-20px h-20px object-cover">
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/500x350/457b9d/ffffff?text=Prayer+Meeting" alt="Prayer Meeting" class="w-full h-auto object-cover">
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/500x350/1d3557/ffffff?text=Outreach+Day" alt="Outreach Day" class="w-full h-auto object-cover">
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/500x350/e63946/ffffff?text=Community+Service" alt="Community Service" class="w-full h-auto object-cover">
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/500x350/f4a261/ffffff?text=Worship+Night" alt="Worship Night" class="w-full h-auto object-cover">
+                </div>
+                <!-- Gallery Item 6 -->
+                <div class="rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <img src="https://placehold.co/500x350/2a9d8f/ffffff?text=Bible+Study" alt="Bible Study" class="w-full h-auto object-cover">
+                </div>
+                <!-- Add more items as needed -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8 mt-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2023 Growing in Christ Family. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript file for functionality like mobile menu -->
+    <script src="script.js"></script>
+</body>
+</html>

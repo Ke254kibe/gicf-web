@@ -1,0 +1,20 @@
+/* * This file is for any custom styles not handled by Tailwind CSS.
+ * For example, a custom animation or a unique hover effect.
+ */
+
+/* Example: Add a subtle fade-in animation to sections */
+.fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Example: Custom utility class */
+.custom-shadow {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
